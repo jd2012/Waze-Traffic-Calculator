@@ -5,9 +5,11 @@ from datetime import datetime
 from_address = ["Galesburg, IL", "Bloomington, IL", "Lincoln, IL", "Peoria, IL", "Lincoln, IL", "El Paso, IL", "Pontiac, IL", "40.6270229, -89.5019788"]
 to_address = ["Peoria, IL", "Peoria, IL", "Peoria, IL", "Bloomington, IL", "Bloomington, IL", "Bloomington, IL", "Bloomington, IL", "40.7355303, -89.6706033"]
 region = 'US'
+header_row = ["From", "To", "Travel Time"]
 
 with open('traffictimes.csv', 'w', newline='') as file:
   w = writer(file)
+  w.writerow(header_row)
   for i in range(8):
     route = WazeRouteCalculator.WazeRouteCalculator(from_address[i], to_address[i], region)
     route_time, route_distance = route.calc_route_info()
