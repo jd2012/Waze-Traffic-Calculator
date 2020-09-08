@@ -91,6 +91,15 @@ body {
 
 
 /*
+ * Jumbotron
+ */
+.jumbotron {
+  background-color: null;
+}
+
+
+
+/*
  * Cover
  */
 .cover {
