@@ -23,6 +23,7 @@ Peoria, IL
 Lincoln, IL
 El Paso, IL
 Pontiac, IL
+40.6270229, -89.5019788
 
 ## To List:
 Peoria, IL
@@ -31,4 +32,14 @@ Peoria, IL
 Bloomington, IL
 Bloomington, IL
 Bloomington, IL
+Bloomington, IL
 40.7355303, -89.6706033
+
+# Python List Format
+
+## From
+`["Galesburg, IL", "Bloomington, IL", "Lincoln, IL", "Peoria, IL", "Lincoln, IL", "El Paso, IL", "Pontiac, IL", "40.6270229, -89.5019788"]`
+
+## To
+`["Peoria, IL", "Peoria, IL", "Peoria, IL", "Bloomington, IL", "Bloomington, IL", "Bloomington, IL", "Bloomington, IL", "40.7355303, -89.6706033"]`
+
