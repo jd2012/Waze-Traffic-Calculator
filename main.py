@@ -1,6 +1,7 @@
 import WazeRouteCalculator
 from csv import writer
-from datetime import datetime
+
+# github: https://github.com/jd2012/Waze-Traffic-Calculator
 
 from_address = ["Galesburg, IL", "Bloomington, IL", "Lincoln, IL", "Peoria, IL", "Lincoln, IL", "El Paso, IL", "Pontiac, IL", "40.6270229, -89.5019788"]
 to_address = ["Peoria, IL", "Peoria, IL", "Peoria, IL", "Bloomington, IL", "Bloomington, IL", "Bloomington, IL", "Bloomington, IL", "40.7355303, -89.6706033"]
