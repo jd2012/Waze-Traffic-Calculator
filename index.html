@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="container embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" height="400px" width="75%" src="https://repl.it/@jd20121/Waze-Traffic-Calculator?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <iframe class="embed-responsive-item" height="400px" width="75%" src="https://repl.it/@jd20121/Waze-Traffic-Calculator-1?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
       </div>
       <div class="container">
         <div class="d-flex py-4 justify-content-center">
@@ -73,14 +73,13 @@
     <script>
       function goPython(){
         $.ajax({
-          url: "main.py",
-          context: document.body
+          url: "main.py"
         }).done(
           function download(file) {
             //creating an invisible element
             var element = document.createElement('a');
             element.setAttribute('href',
-              'data:application/x-downloadable-puppies;charset=utf-8, '); 
+              'data:application/x-downloadable-puppies;charset=utf-8, ');
             element.setAttribute('download', file);
 
             // Above code is equivalent to
