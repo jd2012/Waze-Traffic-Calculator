@@ -61,23 +61,47 @@
       </div>
 
 
-      <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-      <script>
-        function goPython(){
-          $.ajax({
-            url: "main.py",
-            context: document.body
-          }).done(function() {
-            alert('finished python script');;
-          });
-        }
-      </script>
+
 
     </div>
     <!--JS, Popper.js, and jQuery-->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+      function goPython(){
+        $.ajax({
+          url: "main.py",
+          context: document.body
+        }).done(
+          function download(file) {
+            //creating an invisible element
+            var element = document.createElement('a');
+            element.setAttribute('href',
+              'data:application/x-downloadable-puppies;charset=utf-8, '); 
+            element.setAttribute('download', file);
+
+            // Above code is equivalent to
+            // <a href="path of file" download="file name">
+
+            document.body.appendChild(element);
+
+            //onClick property
+            element.click();
+
+            document.body.removeChild(element);
+          }
+
+          // Start file download.
+          document.getElementById("btn").addEventListener("click",
+            function() {
+              var filename = "traffictimes.csv";
+              download(filename);
+            }, false);
+      );
+    }
+    </script>
   </body>
 </html>
