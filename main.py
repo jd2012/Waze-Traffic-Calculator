@@ -8,6 +8,13 @@ to_address = ["Peoria, IL", "Peoria, IL", "Peoria, IL", "Bloomington, IL", "Bloo
 region = 'US'
 header_row = ["From", "To", "Travel Time"]
 
+def pick_format(){
+  print("Choose the format to print to the console:\n\t(1) Times inline context\n\t(2) Comma seperated times and context \n\t(3) Just times")
+  print_format = input("Choose format [1, 2, 3]:")
+}
+if 
+
+
 with open('traffictimes.csv', 'w', newline='') as file:
   w = writer(file)
   w.writerow(header_row)
