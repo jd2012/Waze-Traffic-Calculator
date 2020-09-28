@@ -13,7 +13,11 @@ Built using:
 
 ...but mostly my brain.
 
-Built for the best and most accurate meteorologist in world. Check out her work at [Heart of Illinois ABC](https://www.hoiabc.com/weather)
+---
+
+##### Built for the best and most accurate meteorologist in world. Check out her work at [Heart of Illinois ABC](https://www.hoiabc.com/weather)
+
+---
 
 ## What It Do
 
