@@ -6,6 +6,7 @@ import pyautogui as pag
 
 wb = xw.Book.caller()
 sht = wb.sheets[0]
+sht['E1'].value = "Status:"
 
 from_address = ["Galesburg, IL", "Bloomington, IL", "Lincoln, IL", "Peoria, IL", "Lincoln, IL", "El Paso, IL", "Pontiac, IL", "40.6270229, -89.5019788"]
 to_address = ["Peoria, IL", "Peoria, IL", "Peoria, IL", "Bloomington, IL", "Bloomington, IL", "Bloomington, IL", "Bloomington, IL", "40.7355303, -89.6706033"]
@@ -15,10 +16,13 @@ region = 'US'
 
 def getTraffic():
     route_time = []
+    sht['E2'].value = "Route:"
     for i in range(8):
         route = WazeRouteCalculator.WazeRouteCalculator(from_address[i], to_address[i], region)
         route_time.append(route.calc_route_info()[0])
+        sht['F2'].value = i
     xw.Range('C2').options(transpose=True).value = route_time
+    sht['E1:F2'].value = "" 
 
 def resetDocument():
     sht['A1'].value = "From"
@@ -34,6 +38,7 @@ def main():
         if confirm_reset == 'Fine, reset the document':
             resetDocument()
         elif confirm_reset == 'Nah, I\'m gonna continue and then tell Joseph his program broke later':
+            sht['F1'].value = "Running..."
             getTraffic()
         elif confirm_reset == 'Cancel, cuz I don\'t want to hit the other buttons':
             return
@@ -41,6 +46,7 @@ def main():
             pag.alert(text='An error has occured. Exiting the program.', title='ERROR', button='OK')
             return
     else:
+        sht['F1'].value = "Running..."
         getTraffic()
 
 if __name__ == "__main__":
