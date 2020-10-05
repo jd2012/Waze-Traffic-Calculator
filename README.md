@@ -38,6 +38,6 @@ Using the xlwings Excel Add-in, the program request the travel time betweeen the
 
 ## Why It Cool
 
-- I buit it
+- I built it
 - ~~It works~~ sorta
 
