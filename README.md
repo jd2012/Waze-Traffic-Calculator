@@ -32,7 +32,13 @@ Using the WazeRouteCalculator Python Package, the program request the travel tim
 | 40.6270229, -89.5019788                        | 40.7355303, -89.6706033                        |
 
 It can output the results in the following formats
-- 
+| Format                                         | Example Output                                 |
+| ---------------------------------------------- | ---------------------------------------------- |
+| Times inline with context                      |                                                |          
+| Comma seperated times and context              |                                                |         
+| Just times                                     |                                                |      
+| Write to CSV file                              |                                                |        
+
 ## Why It Cool
 
 - I built it
