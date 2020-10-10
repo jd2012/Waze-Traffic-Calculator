@@ -36,7 +36,7 @@ It can output the results in the following formats
 | ---------------------------------------------- | -------------------------------------------------------- |
 | Times inline with context                      | `From Galesburg, IL to Peoria, IL:        45.35 minutes` |          
 | Comma seperated times and context              | `Galesburg, IL,Peoria, IL,45.35`                         |         
-| Just times                                     | `45.35`.                                                 |      
+| Just times                                     | `45.35`                                                  |      
 | Write to CSV file                              | `Times written to traffictimes.csv` found on [Repl.it](https://repl.it/@jd20121/Waze-Traffic-Calculator-1#traffictimes.csv) |        
 
 ## Why It Cool
