@@ -4,13 +4,9 @@
 ## About
 
 Built using:
-
 - Python 3
-- Python Package [Waze Route Caclulator](https://github.com/kovacsbalu/WazeRouteCalculator)
 - [My Brain](https://github.com/jd2012)
-- Python Package [xlwings](https://www.xlwings.org/)
-- Python Package [PyAutoGUI](https://pyautogui.readthedocs.io/en/latest/)
-
+- Python Package [Waze Route Caclulator](https://github.com/kovacsbalu/WazeRouteCalculator)
 ...but mostly my brain.
 
 ---
@@ -21,7 +17,7 @@ Built using:
 
 ## What It Do
 
-Using the xlwings Excel Add-in, the program request the travel time betweeen the locations bellow through the Waze API (via WazeRouteCalculator) and populates an Excel sheet with the results.  
+Using the WazeRouteCalculator Python Package, the program request the travel time betweeen the locations bellow through the Waze API and and can return the results in various formats.  
 
 | From                                           | To                                             |
 | ---------------------------------------------- | ---------------------------------------------- |
@@ -34,10 +30,10 @@ Using the xlwings Excel Add-in, the program request the travel time betweeen the
 | Pontiac, IL                                    | Bloomington, IL                                |
 | 40.6270229, -89.5019788                        | 40.7355303, -89.6706033                        |
 
-![screenshot](wtcscreenshot.png)
-
+It can output the results in the following formats
+- 
 ## Why It Cool
 
-- I buit it
+- I built it
 - ~~It works~~ sorta
 
