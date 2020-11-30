@@ -117,6 +117,7 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
   background-color: rgba(0, 0, 0, .5);
+  bottom: 0px;
   width: 100%;
   position: absolute;
   z-index: 50;
