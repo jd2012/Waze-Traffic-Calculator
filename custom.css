@@ -123,9 +123,10 @@ body {
  * Alert
  */
 .alert-fixed {
-    position:fixed; 
-    top: 0px; 
-    z-index: 100;
+  position:fixed; 
+  top: 0px; 
+  z-index: 100;
+  text-shadow: none; /* Prevent inheritance from `body` */
 }
   
   
