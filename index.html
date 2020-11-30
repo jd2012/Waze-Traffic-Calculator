@@ -11,19 +11,22 @@
     <!--Custom CSS-->
     <link href="custom.css" rel="stylesheet">
   </head>
-
+  
   <body>
     <div class="container-fluid">
       <!--Jumbotron-->
       <div class="jumbotron text-dark">
         <div class="container text-center" style="background: inherit;">
-              <h1 class="display-3">Waze Traffic Times</h1></br>
-              <p class="lead">The one-stop-shop for all your HOI traffic time needs</p>
-              <!-- Notice -->
-              <p class="notice"><em>Notice: Site currently under testing</em><br>Email jd2012@users.noreply.github.com with concerns.</p>
-              <!-- add/remove inside tags to comment out notice -->
+          <h1 class="display-3">Waze Traffic Times</h1></br>
+          <p class="lead">The one-stop-shop for all your HOI traffic time needs</p>
         </div>
       </div>
+      <!-- Notice -->
+      <div id="overlay">
+        <p class="lead"><b>Notice: Site currently under testing</b></p>
+        <p><em>Email <a href="mailto:jd2012@users.noreply.github.com?subject=Waze Traffic Site">jd2012@users.noreply.github.com</a> with concerns.</em></p>
+      </div>
+      <!-- add/remove hidden attribute to hide/show notice -->
       <!--Navbar-->
       <div class="container">
         <div class="row py-3 justify-content-center">
@@ -58,8 +61,8 @@
         </div>
       </div>
       
-    <footer class="footer">
-      <div class="container text-center">
+    <footer class="footer bg-dark">
+      <div class="container text-center" height="10%">
         <span class="text-muted">created by <a href="jd2012.github.com">@jd2012</a>&emsp;&emsp;&emsp;©2020</span>
       </div>
     </footer>
