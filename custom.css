@@ -117,6 +117,10 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
   background-color: rgba(0, 0, 0, .5);
+  width: 100%;
+  position: absolute;
+  z-index: 50;
+  
 }
 .mastfoot.a {
   color: rgba(255, 255, 255, .75);
@@ -127,7 +131,7 @@ body {
  */
 .alert-fixed {
   position:fixed; 
-  top: 5px; 
+  top: 10px; 
   z-index: 100;
   text-shadow: none; /* Prevent inheritance from `body` */
 }
