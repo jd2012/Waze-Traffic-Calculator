@@ -15,9 +15,9 @@
   <body>
     <!-- Notice -->
     <!-- add/remove hidden attribute to toggle notice -->
-    <div class="container-sm mx-auto alert alert-danger alert-fixed text-center alert-dismissible"> 
-      <a href="#" class="close" data-dismiss="alert">&times;</a>
-      <strong>Notice:</strong> Site currently under testing.   Test #14
+    <div id="notice" class="container-sm mx-auto alert alert-danger alert-fixed text-center alert-dismissible fade show"> 
+      <button type="button" class="close">&times;</button>
+      <strong>Notice:</strong> Site currently under testing.   Test #15
     </div>
     <div class="container-fluid">
       <!--Jumbotron-->
@@ -55,22 +55,23 @@
           </div>
         </div>
       </div>
-    <div class="container">
+      <div class="container">
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" height="75%" width="75%" src="https://repl.it/@jd20121/Waze-Traffic-Calculator-1?embed=1&output=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
         </div>
       </div>
-    </div>  
-    <footer class="footer mastfoot" height="3rem">
-      <div class="container-fluid text-center">
-        <span>created by <a href="jd2012.github.com" style="color: inherit;">@jd2012</a>   © 2020</span>
-      </div>
-    </footer>
+      
+      <footer class="footer mastfoot" height="3rem">
+        <div class="container-fluid text-center">
+          <span>created by <a href="jd2012.github.com" style="color: inherit;">@jd2012</a>   © 2020</span>
+        </div>
+      </footer>
+    </div>
     <!--JS, Popper.js, and jQuery-->
     <script>
     $(document).ready(function(){
       $(".close").click(function(){
-        $("#myAlert").alert("close");
+        $("#notice").alert("close");
       });
     });
     </script>
