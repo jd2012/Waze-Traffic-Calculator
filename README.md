@@ -3,6 +3,8 @@
 
 ## About
 
+![WTCScreenshot](wtcscreenshoot.png)
+
 Built using:
 - Python 3
 - [My Brain](https://github.com/jd2012)
